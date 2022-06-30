@@ -1,0 +1,267 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x:hidden;
+    color:black;
+  }
+
+h1{
+    font-family: 'Megrim';
+    font-size: 180px;
+    
+}
+.pomme{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.patate1{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    z-index:0;
+}
+.patate2{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+.un{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.firstname{
+    position: relative;
+    margin-right: 250px;
+    top:100px;
+    z-index: 3;
+}
+.lastname{
+  position: relative;
+  margin-right: 265px;   
+  Bottom:180px
+}
+.dev{
+    position: relative;
+    margin-right:265px;
+    bottom:350px
+    
+}
+.container1 > div > h2{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    align-items:baseline;
+    flex-direction: column;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 10px;
+   
+}
+.navbar > li {
+    font-family: 'Alegreya Sans';
+    font-size: 24px;
+    list-style: none;
+    height: 35px;
+    color:rgb(0, 0, 0);
+}
+.navbar > li > a{
+    text-decoration-line: none;
+    text-decoration-color:black;
+    color: black;
+}
+.navbar > li > a:hover{
+    border-left: #E4C3B6 2px solid;
+}
+/*---------------------------------------------------------------------*/
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container2 > h2{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    top:50px;
+    
+}
+.p1{
+    width: 50em;
+    height: 30em;
+    box-sizing: border-box;
+}
+.container2 > .p1 > p {
+    font-family: 'Alegreya Sans';
+    font-size: 100;
+    font-size: 32px; 
+}
+.vide{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+/*----------------------------------------------------------------------*/
+.container3 > h2{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    left: 300px;  
+    z-index: 2;
+}
+.patate3{
+    position: absolute;
+    left:150px;
+    top:70px;
+    width: 800px;
+    z-index: 1;
+}
+.photo1{
+    position: absolute;
+    right:100px;
+    bottom:200px;
+    z-index:3;
+    width: 600px;
+}
+.vide2{
+    
+}
+.photo2{
+    position: absolute;
+    left: 0px;
+    bottom:200px;
+    width: 600px;
+}
+.photo3{
+    position: absolute;
+    width: 600px;
+    right:600px;
+    bottom:200px;
+}
+/*----------------------------------------------------------------------*/
+.patate4{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.patate5{
+    position: absolute;
+    bottom: 0px;
+    left:300px
+}
+.patate6{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+div > .container4 > .contact{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    top:50px;
+}
+div > .container4 > .adresse{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    top:180px;
+    left: 820px;
+}
+div > .container4 > .adresse2{
+    font-family:'Alegreya Sans';
+    font-weight:100;
+    font-size: 24px;
+    position: absolute;
+    top:230px;
+    left: 810px;
+    text-align: center;
+}
+div > .container4 > .telephone{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    top:370px;
+    left: 890px;
+}
+div > .container4 > .telephone2{
+    font-family:'Alegreya Sans';
+    font-weight:100;
+    font-size: 24px;
+    position: absolute;
+    top:420px;
+    left: 910px;
+    text-align: center;
+}
+div > .container4 > .mail{
+    font-family:'Alegreya Sans SC';
+    font-weight:100;
+    font-size: 40px;
+    position: absolute;
+    bottom: 340px;
+    left:840px
+}
+div > .container4 > .mail2{
+    font-family:'Alegreya Sans';
+    font-weight:100;
+    font-size: 24px;
+    position: absolute;
+    bottom:355px;
+    left: 930px;
+    text-align: center;
+}
+/*----------------------------------------------------------------------*/
+  #page {
+    overflow:hidden;
+    white-space:nowrap;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#CCC;
+    display:flex;
+    flex-wrap:no-wrap;
+  }
+  .pane {
+    flex:0 0 100vw;
+    height:100vh;
+    display:flex;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    background-color: #ffff;
+  }
+  
+  .pane:nth-child(4n+2)  {
+    background-color: white;
+  }
+  .pane:nth-child(4n+3)  {
+    background-color: white;
+  }
+  .pane:nth-child(4n+4)  {
+    background-color: white;
+  }
+  
+
+  /*
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Megrim', cursive; 
+*/
