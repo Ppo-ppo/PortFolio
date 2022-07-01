@@ -21,12 +21,25 @@ h1{
     top: 0px;
     right:0px;
     z-index:0;
+    /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0); */
 }
+/* #patateun{
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+} */
+
 .patate2{
     position: absolute;
     bottom: 0px;
     right:0px;
+    /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0); */
 }
+/* #patatedeux{
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+} */
 .un{
     width: 100vw;
     display:flex;
@@ -113,42 +126,63 @@ h1{
 }
 
 /*----------------------------------------------------------------------*/
+.container3{
+    display: flex;
+    align-items: center;
+}
 .container3 > h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
-    position: absolute;
-    left: 300px;  
+    position: relative;
+    margin-left: 100px;
     z-index: 2;
 }
 .patate3{
     position: absolute;
-    left:150px;
-    top:70px;
+    left:500px;
+    top: 40px;
     width: 800px;
     z-index: 1;
 }
+#patatetrois{ 
+}
+.contenant{
+    width: 100vw;
+    gap: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:end;
+}
 .photo1{
-    position: absolute;
-    right:100px;
-    bottom:200px;
+    position: relative;
+    z-index:3;
+    width: 600px;
+}
+.photo2{
+    position: relative;
     z-index:3;
     width: 600px;
 }
 .vide2{
-    
-}
-.photo2{
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: 0px;
-    bottom:200px;
-    width: 600px;
+    top:0px;
+    right: 200px;
+}
+.contenant2{
+    display: flex;
+    justify-content:inherit;
+    align-items: inherit;
+    flex-direction: row;
+    gap: 250px;
 }
 .photo3{
-    position: absolute;
     width: 600px;
-    right:600px;
-    bottom:200px;
+}
+.photo4{
+    width: 600px;
 }
 /*----------------------------------------------------------------------*/
 .patate4{
@@ -166,12 +200,27 @@ h1{
     top: 0px;
     right: 0px;
 }
-div > .container4 > .contact{
+.container4{
+    justify-content: center;
+    align-items: center;
+}
+div >.bbox >.contact{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
     position: absolute;
     top:50px;
+}
+.container4{
+    background-image: url("cadre_contact.svg");
+    background-position:center;
+    background-repeat: no-repeat;
+    width:45vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 div > .container4 > .adresse{
     font-family:'Alegreya Sans SC';
@@ -213,7 +262,7 @@ div > .container4 > .mail{
     font-size: 40px;
     position: absolute;
     bottom: 340px;
-    left:840px
+    left:730px
 }
 div > .container4 > .mail2{
     font-family:'Alegreya Sans';
@@ -221,7 +270,7 @@ div > .container4 > .mail2{
     font-size: 24px;
     position: absolute;
     bottom:355px;
-    left: 930px;
+    left: 815px;
     text-align: center;
 }
 /*----------------------------------------------------------------------*/
@@ -263,3 +312,20 @@ font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Alegreya Sans SC', sans-serif;
 font-family: 'Megrim', cursive; 
 */
+
+@keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+@keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
