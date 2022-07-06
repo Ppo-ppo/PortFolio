@@ -21,25 +21,27 @@ h1{
     top: 0px;
     right:0px;
     z-index:0;
-    /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0); */
+    animation: wave 12s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0); 
 }
-/* #patateun{
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+#patateun{
+    animation: wave 10s cubic-bezier( 0.37, 0.45, 0.65, 0.56)  infinite, swell 17s ease -0.55s infinite;
     opacity: 1;
-} */
-
+    
+} 
+#patatedeux{
+    animation: wave 15s cubic-bezier( 0.38, 1.44, 0.65, 0.56) infinite, swell 14s ease -1.85s infinite;
+    opacity: 1;
+    
+} 
 .patate2{
     position: absolute;
     bottom: 0px;
     right:0px;
-    /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0); */
 }
-/* #patatedeux{
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
-} */
+
+
+
 .un{
     width: 100vw;
     display:flex;
@@ -126,44 +128,94 @@ h1{
 }
 
 /*----------------------------------------------------------------------*/
-.container3{
-    display: flex;
-    align-items: center;
+
+.portfo{
+    position: relative;
+    width: 100px;
+    top: -500px;
 }
-.container3 > h2{
+.portfo> h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
-    position: relative;
-    margin-left: 100px;
-    z-index: 2;
-}
-.patate3{
     position: absolute;
-    left:500px;
-    top: 40px;
-    width: 800px;
+}
+
+.slider {
+    width: 600px;
+    height: 500px;
+  }
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    background: #222;
     z-index: 1;
-}
-#patatetrois{ 
-}
-.contenant{
-    width: 100vw;
-    gap: 250px;
+  }
+  #items {
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -300px;
+  }
+  #items.shifting {
+    transition: left .2s ease-out;
+  }
+  .slide {
+    width: 600px;
+    height: 500px;
+    cursor: pointer;
+    float: left;
     display: flex;
-    align-items: flex-end;
-    justify-content:end;
-}
-.photo1{
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
     position: relative;
-    z-index:3;
-    width: 600px;
-}
-.photo2{
-    position: relative;
-    z-index:3;
-    width: 600px;
-}
+    background-color: #E4C3B6;
+  }
+  .slide>img{
+      width: 600px;
+      height: 500px;
+  }
+  .control {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .prev,
+  .next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .petitebox{
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top:10px;
+      right: 0;
+  }
+  .prev {
+    background-image: url(chevron-left-solid.svg);
+    left: 500px;
+  }
+  .next {
+    background-image: url(chevron-right-solid.svg);
+    right: 400px;
+  }
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
+  }
+  
 .vide2{
     width: 30px;
     height: 30px;
@@ -171,19 +223,8 @@ h1{
     top:0px;
     right: 200px;
 }
-.contenant2{
-    display: flex;
-    justify-content:inherit;
-    align-items: inherit;
-    flex-direction: row;
-    gap: 250px;
-}
-.photo3{
-    width: 600px;
-}
-.photo4{
-    width: 600px;
-}
+
+
 /*----------------------------------------------------------------------*/
 .patate4{
     position: absolute;
@@ -200,10 +241,7 @@ h1{
     top: 0px;
     right: 0px;
 }
-.container4{
-    justify-content: center;
-    align-items: center;
-}
+
 div >.bbox >.contact{
     font-family:'Alegreya Sans SC';
     font-weight:100;
@@ -211,67 +249,67 @@ div >.bbox >.contact{
     position: absolute;
     top:50px;
 }
-.container4{
+.container5{
     background-image: url("cadre_contact.svg");
     background-position:center;
     background-repeat: no-repeat;
+    background-size: center;
     width:45vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
 
 }
-div > .container4 > .adresse{
+div > .container5 > .adresse{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
-    position: absolute;
-    top:180px;
-    left: 820px;
+    margin:0;
 }
-div > .container4 > .adresse2{
+div > .container5 > .adresse2{
     font-family:'Alegreya Sans';
     font-weight:100;
     font-size: 24px;
-    position: absolute;
-    top:230px;
-    left: 810px;
+    margin: 0;
     text-align: center;
 }
-div > .container4 > .telephone{
+div > .container5 > .telephone{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
-    position: absolute;
-    top:370px;
-    left: 890px;
+    margin: 0;
 }
-div > .container4 > .telephone2{
+div > .container5 > .telephone2{
     font-family:'Alegreya Sans';
     font-weight:100;
     font-size: 24px;
-    position: absolute;
-    top:420px;
-    left: 910px;
-    text-align: center;
+    margin: 0;
 }
-div > .container4 > .mail{
+div > .container5 > .mail{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
-    position: absolute;
-    bottom: 340px;
-    left:730px
+    margin: 0;
 }
-div > .container4 > .mail2{
+div > .container5 > .mail2{
     font-family:'Alegreya Sans';
     font-weight:100;
     font-size: 24px;
-    position: absolute;
-    bottom:355px;
-    left: 815px;
     text-align: center;
+    margin-bottom: 110px;
+    margin-top: 0;
+}
+.vide3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:0px;
+    right: 0px;
 }
 /*----------------------------------------------------------------------*/
   #page {
@@ -318,14 +356,15 @@ font-family: 'Megrim', cursive;
       margin-left: 0;
     }
     100% {
-      margin-left: -1600px;
+      margin-left: -100px;
     }
   }
 @keyframes swell {
     0%, 100% {
-      transform: translate3d(0,-25px,0);
+      transform: translate3d(0,-150px,0);
     }
     50% {
-      transform: translate3d(0,5px,0);
+      transform: translate3d(0,1px,0);
     }
   }
+ 
