@@ -133,32 +133,48 @@ h1{
     display: inherit;
     width: 50%;
     height: 100vh;
+    border-radius: 0%;
     justify-content: inherit;
     align-items: inherit;
     position: absolute;
     left:0px;
-    background-color: #E4C3B6;
-;
+    background-color: #e4c3b6;
 }
+/*.portfo::after{
+    content: "";
+    height: 100vh;
+    width: 20px;
+    left: 15px;
+    background-color:white;
+    position: absolute;
+}
+.portfo::before{
+    content: "";
+    height: 100vh;
+    width: 5px;
+    left: 30px;
+    background-color:white;
+    position: absolute;
+}*/
 .portfo> h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 80px;
 }
-.cercle{
+.cercle1{
     position: absolute;
-    left:40px;
-    top:150px;
-    width: 50px;
-    height: 50px;
+    left:95px;
+    top:125px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border:1px solid aliceblue;
     animation: 1s linear infinite alternate boxMagic,
                7s linear infinite spinning;
-    padding-top:3px;
+    padding-top:4px;
 }
 @keyframes boxMagic{
     from{
@@ -170,10 +186,10 @@ h1{
     }
     to{
         box-shadow: 
-        0 -2px 0 #feac5e,
-        -2px 0 0 #c779d0,
-        0 2px 0 #4bc0c8,
-        2px 0 0 #42db75;
+        0 -1px 0 #feac5e,
+        -1px 0 0 #c779d0,
+        0 1px 0 #4bc0c8,
+        1px 0 0 #42db75;
     }
 }
 @keyframes spinning{
@@ -184,16 +200,19 @@ h1{
      transform: rotate(360deg);
  }
 }
-.portfo > a{
+.portfo > .projet1{
   text-decoration: none;
   text-decoration-color: black;
   color:black;
   padding:5px;
   position: absolute;
-  left:100px;
+  left:102px;
   top:163px;
   font-family: 'Alegreya Sans';
-  
+  transition: .2s;
+}
+.projet1:hover{
+    font-size:17Px ;
 }
 .modal{
   visibility: hidden;
@@ -207,6 +226,7 @@ h1{
   left:0px;
   background: rgba(77,77,77,.3);
   transition: .3s;
+  z-index: 1;
 }
 .modal:target{
     visibility: visible;
@@ -219,6 +239,8 @@ h1{
   text-align: center;
   border-radius: 10px;
   position: relative;
+  z-index: 1;
+  background-color: whitesmoke;
 }
 .modal_content > img {
     width: 500px;
@@ -235,6 +257,208 @@ h1{
     top: 15px;
     text-decoration: none;
 }
+.portfo > .projet2{
+    text-decoration: none;
+    text-decoration-color: black;
+    color:black;
+    padding:5px;
+    position: absolute;
+    left:250px;
+    top:250px;
+    font-family: 'Alegreya Sans';
+    transition: .2s;
+  }
+  .projet2:hover{
+    font-size:17Px ;
+}
+  .modal1{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: inherit;
+    width: 100%;
+    height: 100vh;
+    justify-content: inherit;
+    align-items: inherit;
+    left:0px;
+    background: rgba(77,77,77,.3);
+    transition: .3s;
+    z-index: 1000;
+  }
+  .modal1:target{
+      visibility: visible;
+      opacity: 1;
+  }
+  .modal_content1{
+    padding: 1.5em 2em;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
+  }
+  .modal_content1 > img {
+      width: 500px;
+  }
+  .modal_content1 > h2 {
+      font-family: 'Alegreya Sans Sc';
+  }
+  .modal_content1 > p{
+      font-family: 'Alegreya Sans';
+  }
+  .cercle2{
+    position: absolute;
+    left:230px;
+    top:200px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border:1px solid aliceblue;
+    animation: 2s linear infinite alternate boxMagic,
+               9s linear infinite spinning;
+    padding-top:3px; 
+    z-index: 0;
+  }
+  .portfo > .projet3{
+    text-decoration: none;
+    text-decoration-color: black;
+    color:black;
+    padding:5px;
+    position: absolute;
+    left:200px;
+    top:450px;
+    font-family: 'Alegreya Sans';
+    transition: .2s;
+  }
+  .projet3:hover{
+    font-size:17Px ;
+}
+  .modal2{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: inherit;
+    width: 100%;
+    height: 100vh;
+    justify-content: inherit;
+    align-items: inherit;
+    left:0px;
+    background: rgba(77,77,77,.3);
+    transition: .3s;
+    z-index: 1000;
+  }
+  .modal2:target{
+      visibility: visible;
+      opacity: 1;
+  }
+  .modal_content2{
+    padding: 1.5em 2em;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
+  }
+  .modal_content2 > img {
+      width: 500px;
+  }
+  .modal_content2 > h2 {
+      font-family: 'Alegreya Sans Sc';
+  }
+  .modal_content2 > p{
+      font-family: 'Alegreya Sans';
+  }
+  .cercle3{
+    position: absolute;
+    left:190px;
+    top:400px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border:1px solid aliceblue;
+    animation: 2s linear infinite alternate boxMagic,
+               9s linear infinite spinning;
+    padding-top:3px; 
+    z-index: 0;
+  }
+  .portfo > .projet4{
+    text-decoration: none;
+    text-decoration-color: black;
+    color:black;
+    padding:5px;
+    position: absolute;
+    right:280px;
+    bottom:280px;
+    font-family: 'Alegreya Sans';
+    transition: .2s; 
+  }
+  .projet4:hover{
+    font-size:17Px ;
+}
+  .modal3{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: inherit;
+    width: 100%;
+    height: 100vh;
+    justify-content: inherit;
+    align-items: inherit;
+    left:0px;
+    background: rgba(77,77,77,.3);
+    transition: .3s;
+    z-index: 1000;
+  }
+  .modal3:target{
+      visibility: visible;
+      opacity: 1;
+  }
+  .modal_content3{
+    padding: 1.5em 2em;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
+  }
+  .modal_content3 > img {
+      width: 500px;
+  }
+  .modal_content3 > h2 {
+      font-family: 'Alegreya Sans Sc';
+  }
+  .modal_content3 > p{
+      font-family: 'Alegreya Sans';
+  }
+  .cercle4{
+    position: absolute;
+    right:230px;
+    bottom:200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:1px solid aliceblue;
+    animation: 2s linear infinite alternate boxMagic,
+               9s linear infinite spinning;
+    padding-top:8px; 
+    z-index: 0;
+  }
+  .cercle5{
+    position: absolute;
+    right:210px;
+    bottom:400px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid aliceblue;
+    animation: 2s linear infinite alternate boxMagic,
+               10s linear infinite spinning;
+    padding-top:2px; 
+    z-index: 0;
+  }
 .portfo2{
   display: inherit;
   width: 50%;
