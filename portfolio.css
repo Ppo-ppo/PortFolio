@@ -4,12 +4,10 @@ html{
 body{
     overflow-x:hidden;
     color:black;
-  }
-
+}
 h1{
     font-family: 'Megrim';
-    font-size: 180px;
-    
+    font-size: 180px;  
 }
 .pomme{
     position: absolute;
@@ -20,28 +18,13 @@ h1{
     position: absolute;
     top: 0px;
     right:0px;
-    z-index:0;
-    animation: wave 12s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0); 
+    z-index:0; 
 }
-#patateun{
-    animation: wave 10s cubic-bezier( 0.37, 0.45, 0.65, 0.56)  infinite, swell 17s ease -0.55s infinite;
-    opacity: 1;
-    
-} 
-#patatedeux{
-    animation: wave 15s cubic-bezier( 0.38, 1.44, 0.65, 0.56) infinite, swell 14s ease -1.85s infinite;
-    opacity: 1;
-    
-} 
 .patate2{
     position: absolute;
     bottom: 0px;
     right:0px;
 }
-
-
-
 .un{
     width: 100vw;
     display:flex;
@@ -49,7 +32,6 @@ h1{
     align-items: flex-end;
     justify-content: center;
 }
-
 .firstname{
     position: relative;
     margin-right: 250px;
@@ -64,8 +46,7 @@ h1{
 .dev{
     position: relative;
     margin-right:265px;
-    bottom:350px
-    
+    bottom:350px   
 }
 .container1 > div > h2{
     font-family:'Alegreya Sans SC';
@@ -78,8 +59,7 @@ h1{
     flex-direction: column;
     margin-left: 20px;
     position: absolute;
-    bottom: 10px;
-   
+    bottom: 10px;  
 }
 .navbar > li {
     font-family: 'Alegreya Sans';
@@ -102,7 +82,6 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 .container2 > h2{
     font-family:'Alegreya Sans SC';
@@ -126,9 +105,7 @@ h1{
     top:0px;
     right: 0px;
 }
-
 /*----------------------------------------------------------------------*/
-
 .portfo{
     display: inherit;
     width: 50%;
@@ -139,23 +116,8 @@ h1{
     position: absolute;
     left:0px;
     background-color: #e4c3b6;
+    display: flex;
 }
-/*.portfo::after{
-    content: "";
-    height: 100vh;
-    width: 20px;
-    left: 15px;
-    background-color:white;
-    position: absolute;
-}
-.portfo::before{
-    content: "";
-    height: 100vh;
-    width: 5px;
-    left: 30px;
-    background-color:white;
-    position: absolute;
-}*/
 .portfo> h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
@@ -164,52 +126,19 @@ h1{
     top: 10px;
     left: 80px;
 }
-.cercle1{
-    position: absolute;
-    left:95px;
-    top:125px;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border:1px solid aliceblue;
-    animation: 1s linear infinite alternate boxMagic,
-               7s linear infinite spinning;
-    padding-top:4px;
-}
-@keyframes boxMagic{
-    from{
-        box-shadow:
-        0 0 0 #feac5e,
-        0 0 0 #c779d0,
-        0 0 0 #4bc0c8,
-        0 0 0 #42db75;
-    }
-    to{
-        box-shadow: 
-        0 -1px 0 #feac5e,
-        -1px 0 0 #c779d0,
-        0 1px 0 #4bc0c8,
-        1px 0 0 #42db75;
-    }
-}
-@keyframes spinning{
- from {
-     transform: rotate(0deg);
- }
- to{
-     transform: rotate(360deg);
- }
+.patate3{
+  position: absolute;
+  z-index: 3;
 }
 .portfo > .projet1{
   text-decoration: none;
   text-decoration-color: black;
   color:black;
   padding:5px;
-  position: absolute;
-  left:102px;
-  top:163px;
   font-family: 'Alegreya Sans';
   transition: .2s;
+  position: absolute;
+  top:250px
 }
 .projet1:hover{
     font-size:17Px ;
@@ -263,10 +192,10 @@ h1{
     color:black;
     padding:5px;
     position: absolute;
-    left:250px;
-    top:250px;
     font-family: 'Alegreya Sans';
     transition: .2s;
+    position: absolute;
+    top:350px
   }
   .projet2:hover{
     font-size:17Px ;
@@ -307,29 +236,16 @@ h1{
   .modal_content1 > p{
       font-family: 'Alegreya Sans';
   }
-  .cercle2{
-    position: absolute;
-    left:230px;
-    top:200px;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border:1px solid aliceblue;
-    animation: 2s linear infinite alternate boxMagic,
-               9s linear infinite spinning;
-    padding-top:3px; 
-    z-index: 0;
-  }
   .portfo > .projet3{
     text-decoration: none;
     text-decoration-color: black;
     color:black;
     padding:5px;
     position: absolute;
-    left:200px;
     top:450px;
     font-family: 'Alegreya Sans';
     transition: .2s;
+    z-index: 100;
   }
   .projet3:hover{
     font-size:17Px ;
@@ -370,27 +286,13 @@ h1{
   .modal_content2 > p{
       font-family: 'Alegreya Sans';
   }
-  .cercle3{
-    position: absolute;
-    left:190px;
-    top:400px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border:1px solid aliceblue;
-    animation: 2s linear infinite alternate boxMagic,
-               9s linear infinite spinning;
-    padding-top:3px; 
-    z-index: 0;
-  }
   .portfo > .projet4{
     text-decoration: none;
     text-decoration-color: black;
     color:black;
     padding:5px;
     position: absolute;
-    right:280px;
-    bottom:280px;
+    top:550px;
     font-family: 'Alegreya Sans';
     transition: .2s; 
   }
@@ -433,32 +335,6 @@ h1{
   .modal_content3 > p{
       font-family: 'Alegreya Sans';
   }
-  .cercle4{
-    position: absolute;
-    right:230px;
-    bottom:200px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border:1px solid aliceblue;
-    animation: 2s linear infinite alternate boxMagic,
-               9s linear infinite spinning;
-    padding-top:8px; 
-    z-index: 0;
-  }
-  .cercle5{
-    position: absolute;
-    right:210px;
-    bottom:400px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border:1px solid aliceblue;
-    animation: 2s linear infinite alternate boxMagic,
-               10s linear infinite spinning;
-    padding-top:2px; 
-    z-index: 0;
-  }
 .portfo2{
   display: inherit;
   width: 50%;
@@ -468,7 +344,38 @@ h1{
   position: absolute;
   left:50%;
 }
-
+.portfo2::after{
+    content: "";
+    height: 100vh;
+    width: 20px;
+    left: 15px;
+    background-color:#e4c3b6;
+    position: absolute;
+}
+.portfo2::before{
+    content: "";
+    height: 100vh;
+    width: 5px;
+    left: 40px;
+    background-color:#e4c3b6;
+    position: absolute;
+}
+.github{
+  position: absolute;
+  top:350px
+}
+.git:hover{
+  width: 55px;
+  height: 55px;
+}
+.link:hover{
+  width: 35px;
+  height: 35px;
+}
+.linkedin{
+  position: absolute;
+  top:450px;
+}
 .vide2{
     width: 30px;
     height: 30px;
@@ -481,79 +388,65 @@ h1{
     position: absolute;
     top:0px;
     left: 0px;
+    height: 20vh;
+    width: 20vw;
 }
 .patate5{
     position: absolute;
     bottom: 0px;
-    left:300px
+    left:300px;
+    height: 10vh;
+    width: 16vh;
 }
 .patate6{
     position: absolute;
     top: 0px;
     right: 0px;
-}
-
-div >.bbox >.contact{
-    font-family:'Alegreya Sans SC';
-    font-weight:100;
-    font-size: 40px;
-    position: absolute;
-    top:50px;
+    height: 30vh;
+    width: 30vw;
 }
 .container5{
-    background-image: url("cadre_contact.svg");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: center;
-    width:45vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bbox{
+  position: absolute;
+  top:10px;
+  left: 350px;
+}
 
-
+section>.bbox>h2{
+  font-family:'Alegreya Sans Sc';
 }
-div > .container5 > .adresse{
-    font-family:'Alegreya Sans SC';
-    font-weight:100;
-    font-size: 40px;
-    margin:0;
+.cadre{
+  width: 50vw;
+  height: 74vh;
+  position: relative;
 }
-div > .container5 > .adresse2{
-    font-family:'Alegreya Sans';
-    font-weight:100;
-    font-size: 24px;
-    margin: 0;
-    text-align: center;
+section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-div > .container5 > .telephone{
-    font-family:'Alegreya Sans SC';
-    font-weight:100;
-    font-size: 40px;
-    margin: 0;
+.cadreContain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  position: absolute;
 }
-div > .container5 > .telephone2{
-    font-family:'Alegreya Sans';
-    font-weight:100;
-    font-size: 24px;
-    margin: 0;
+section>div>.cadreContain>h2{
+  font-family:'Alegreya Sans Sc' ;
+  height: 4vh;
+  width: 6vw;
 }
-div > .container5 > .mail{
-    font-family:'Alegreya Sans SC';
-    font-weight:100;
-    font-size: 40px;
-    margin: 0;
-}
-div > .container5 > .mail2{
-    font-family:'Alegreya Sans';
-    font-weight:100;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 110px;
-    margin-top: 0;
+section>div>.cadreContain>p{
+  font-family: 'Alegreya Sans';
 }
 .vide3{
     width: 30px;
@@ -584,7 +477,6 @@ div > .container5 > .mail2{
     justify-content:center;
     background-color: #ffff;
   }
-  
   .pane:nth-child(4n+2)  {
     background-color: white;
   }
@@ -594,28 +486,5 @@ div > .container5 > .mail2{
   .pane:nth-child(4n+4)  {
     background-color: white;
   }
-  
 
-  /*
-font-family: 'Alegreya Sans', sans-serif;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-family: 'Megrim', cursive; 
-*/
-
-@keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -100px;
-    }
-  }
-@keyframes swell {
-    0%, 100% {
-      transform: translate3d(0,-150px,0);
-    }
-    50% {
-      transform: translate3d(0,1px,0);
-    }
-  }
  
