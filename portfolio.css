@@ -244,7 +244,6 @@ h1{
     top:450px;
     font-family: 'Alegreya Sans';
     transition: .2s;
-    z-index: 100;
   }
   .projet3:hover{
     font-size:17Px ;
