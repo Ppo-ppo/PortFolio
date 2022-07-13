@@ -95,7 +95,6 @@ h1{
 }
 .container2 > .p1 > p {
     font-family: 'Alegreya Sans';
-    font-size: 100;
     font-size: 32px; 
 }
 .vide{
@@ -360,9 +359,28 @@ h1{
     background-color:#e4c3b6;
     position: absolute;
 }
+.competence{
+  transform: translateY(-45vh);
+  font-family:'Alegreya Sans Sc';
+}
+.langage>.css{
+  height: 11.85vh;
+  width: 2.94vw;
+}
+.langage>.html{
+  height: 8vh;
+  width: 5vw;
+  transform: translateY(-25px);
+}
+.langage>.js{
+  height: 8vh;
+  width: 5vw;
+  transform: translateY(-25px);
+}
 .github{
   position: absolute;
-  top:350px
+  bottom: 10px;
+  transform: translateX(-50px) ;
 }
 .git:hover{
   width: 55px;
@@ -374,7 +392,8 @@ h1{
 }
 .linkedin{
   position: absolute;
-  top:450px;
+  bottom:10px;
+  transform: translateX(50px);
 }
 .vide2{
     width: 30px;
@@ -439,14 +458,20 @@ section{
   width: 90%;
   height: 90%;
   position: absolute;
+  gap: 10px;
 }
 section>div>.cadreContain>h2{
   font-family:'Alegreya Sans Sc' ;
   height: 4vh;
   width: 6vw;
+  margin: 0;
 }
 section>div>.cadreContain>p{
   font-family: 'Alegreya Sans';
+  margin: 0;
+}
+.mail2{
+padding-left: 10px;
 }
 .vide3{
     width: 30px;
