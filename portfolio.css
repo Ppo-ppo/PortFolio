@@ -334,13 +334,14 @@ h1{
       font-family: 'Alegreya Sans';
   }
 .portfo2{
-  display: inherit;
   width: 50%;
   height: 100vh;
   justify-content: inherit;
   align-items: inherit;
   position: absolute;
   left:50%;
+  display: flex;
+  flex-direction: column;
 }
 .portfo2::after{
     content: "";
@@ -359,35 +360,45 @@ h1{
     position: absolute;
 }
 .competence{
-  transform: translateY(-45vh);
+  position: absolute;
+  top:10px;
+  left: 50px;
   font-family:'Alegreya Sans Sc';
+  z-index: 200;
+}
+.langage{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.langage2{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .langage>.css{
-  height: 11.85vh;
-  width: 2.94vw;
-}
-.langage>.html{
   height: 8vh;
-  width: 5vw;
+  width: 3vw;
   transform: translateY(-25px);
 }
-.langage>.js{
+.langage>.html,.langage>.js{
   height: 8vh;
-  width: 5vw;
+  width: 4vw;
   transform: translateY(-25px);
+}
+.langage2>.figma{
+  height: 8vh;
+  width: 4vw;
+  transform: translateX(-55px);
 }
 .github{
   position: absolute;
   bottom: 10px;
   transform: translateX(-50px) ;
-}
-.git:hover{
-  width: 55px;
-  height: 55px;
-}
-.link:hover{
-  width: 35px;
-  height: 35px;
 }
 .linkedin{
   position: absolute;
