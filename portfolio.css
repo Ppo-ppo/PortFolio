@@ -78,6 +78,7 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 .container2{
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,14 +91,16 @@ h1{
 }
 .p1{
     width: 50em;
-    height: 30em;
     box-sizing: border-box;
     text-align:center;
-    transform: translateY(50px);
+    width: 100%;
+    display: flex;
 }
 .container2 > .p1 > p {
     font-family: 'Alegreya Sans';
     font-size: 32px; 
+    width: 100%;
+
 }
 .vide{
     width: 30px;
@@ -270,21 +273,23 @@ h1{
   }
   .modal_content2{
     padding: 1.5em 2em;
-    width: 500px;
+    width: 100%;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
     position: relative;
     background-color: whitesmoke;
+    box-sizing: border-box;
   }
   .modal_content2 > img {
-      width: 500px;
+      width: 450px;
   }
   .modal_content2 > h2 {
       font-family: 'Alegreya Sans Sc';
   }
   .modal_content2 > p{
       font-family: 'Alegreya Sans';
+      width: 500px;
   }
   .portfo > .projet4{
     text-decoration: none;
@@ -544,5 +549,26 @@ transform: translateX(53px);
     .dev{
       font-size: 40px;
       transform: translateY(150px)translateX(250px);
+    }
+    .container2{
+      width: 100VW;
+    }
+    .container2>p{
+      width: 100%;
+    }
+    .langage,.langage2{
+      flex-direction: column;
+    }
+    .portfo>h2{
+      transform: translateX(-55px);
+    }
+    .contact{
+      transform: translateX(-250px);
+    }
+    .patate4{
+      transform: translateY(-60px)translateX(20px);
+    }
+    .patate5{
+      transform: translateX(-50px);
     }
   }
