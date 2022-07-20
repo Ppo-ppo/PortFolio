@@ -86,29 +86,28 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 .container2{
-    width: 100vw;
+    width: 50vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+    margin:0;
+    padding: 0;
 }
 .container2 > h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
     font-size: 40px;
 }
-.p1{
-    width: 50em;
-    box-sizing: border-box;
-    text-align:center;
-    width: 100%;
-    display: flex;
-}
-.container2 > .p1 > p {
+
+.container2 >  p {
+    display: inherit;
+    max-width:50vw;
     font-family: 'Alegreya Sans';
     font-size: 32px; 
-    width: 100%;
-
+    margin: 0;
+    overflow-wrap: break-word !important;
 }
 .vide{
     width: 30px;
@@ -383,35 +382,35 @@ h1{
 }
 .langage{
   width: 100%;
-  height: 8vh;
+  min-height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .langage2{
   width: 100%;
-  height: 8vh;
+  min-height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .langage>.css{
   height: 8vh;
-  width: 3vw;
+  min-width: 3vw;
   transform: translateY(-25px);
 }
 .langage>.html,.langage>.js{
   height: 8vh;
-  width: 4vw;
+  min-width: 4vw;
   transform: translateY(-25px);
 }
 .langage2>.figma{
   height: 8vh;
-  width: 4vw;
+ min-width: 4vw;
 }
 .langage2>.php{
   height: 8vh;
-  width: 8vw;
+  min-width: 8vw;
 }
 .github{
   position: absolute;
@@ -435,22 +434,22 @@ h1{
     position: absolute;
     top:0px;
     left: 0px;
-    height: 20vh;
-    width: 20vw;
+    max-height: 20vh;
+    max-width: 20vw;
 }
 .patate5{
     position: absolute;
     bottom: 0px;
     left:300px;
-    height: 10vh;
-    width: 16vh;
+    max-height: 10vh;
+    max-width: 16vh;
 }
 .patate6{
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 30vh;
-    width: 30vw;
+    max-height: 30vh;
+    max-width: 30vw;
 }
 .container5{
   display: flex;
@@ -483,7 +482,7 @@ section{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  max-width: 90%;
   height: 90%;
   position: absolute;
   gap: 10px;
@@ -491,8 +490,8 @@ section{
 }
 section>div>.cadreContain>h2{
   font-family:'Alegreya Sans Sc' ;
-  height: 4vh;
-  width: 6vw;
+  max-height: 4vh;
+  max-width: 6vw;
   margin: 0;
   font-size: 3vh;
 }
