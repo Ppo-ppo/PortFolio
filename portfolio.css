@@ -557,6 +557,12 @@ transform: translateX(53px);
       font-size: 40px;
       transform: translateY(150px)translateX(250px);
     }
+    .petitdessin{
+      bottom: 10px;
+      right: 0;
+      height: 100px;
+      width: 150px;
+    }
     .container2{
       width: 100VW;
     }
@@ -578,4 +584,14 @@ transform: translateX(53px);
     .patate5{
       transform: translateX(-50px);
     }
+    .cadre{
+      width: 90vw;
+    }
+    .cadreContain>h2{
+      font-size: 25px !important;
+    }
+    .cadreContain>p{
+      font-size:20px !important ;
+    }
+    
   }
