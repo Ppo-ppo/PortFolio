@@ -19,11 +19,15 @@ h1{
     top: 0px;
     right:0px;
     z-index:0; 
+    max-width:50vw;
+    max-height: 32vh;
 }
 .patate2{
     position: absolute;
     bottom: 0px;
     right:0px;
+    max-width: 26vw;
+    max-height: 35vh;
 }
 .petitdessin{
   position: absolute;
@@ -68,6 +72,8 @@ h1{
     margin-left: 20px;
     position: absolute;
     bottom: 10px;  
+    position: fixed;
+    z-index: 10;
 }
 .navbar > li {
     font-family: 'Alegreya Sans';
@@ -357,22 +363,6 @@ h1{
   display: flex;
   flex-direction: column;
 }
-.portfo2::after{
-    content: "";
-    height: 100vh;
-    width: 20px;
-    left: 15px;
-    background-color:#e4c3b6;
-    position: absolute;
-}
-.portfo2::before{
-    content: "";
-    height: 100vh;
-    width: 5px;
-    left: 40px;
-    background-color:#e4c3b6;
-    position: absolute;
-}
 .competence{
   position: absolute;
   top:10px;
@@ -411,16 +401,6 @@ h1{
 .langage2>.php{
   height: 8vh;
   min-width: 8vw;
-}
-.github{
-  position: absolute;
-  bottom: 10px;
-  transform: translateX(-50px) ;
-}
-.linkedin{
-  position: absolute;
-  bottom:10px;
-  transform: translateX(50px);
 }
 .vide2{
     width: 30px;
@@ -504,6 +484,13 @@ section>div>.cadreContain>p{
 padding-left: 10px;
 transform: translateX(53px);
 }
+.social{
+  flex-direction: row;
+  margin-top: 25px;
+}
+.linkedin{
+  padding-left: 15px;
+}
 .vide3{
     width: 30px;
     height: 30px;
@@ -543,7 +530,7 @@ transform: translateX(53px);
     background-color: white;
   }
 
-  @media (max-width:390px){
+  @media (max-width:767px){
     h1{
       font-size: 80px;
     }
@@ -557,6 +544,9 @@ transform: translateX(53px);
       font-size: 40px;
       transform: translateY(150px)translateX(250px);
     }
+    .navbar{
+      transform: translateY(-10px);
+    }
     .petitdessin{
       bottom: 10px;
       right: 0;
@@ -564,16 +554,44 @@ transform: translateX(53px);
       width: 150px;
     }
     .container2{
-      width: 100VW;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .container2>h2{
+      font-size: 26px;
     }
     .container2>p{
-      width: 100%;
+      max-width: 100vw;
+      font-size: 14px;
     }
     .langage,.langage2{
       flex-direction: column;
     }
+    .portfo{
+      width: 100%;
+      overflow: hidden;
+    }
     .portfo>h2{
       transform: translateX(-55px);
+    }
+    .competence{
+      display: none;
+    }
+    .langage{
+      position: absolute;
+      flex-direction: row;
+      bottom: 0;
+      right: 50%;
+    }
+    .langage2{
+      position: absolute;
+      flex-direction: row;
+      bottom:12%;
+      right: 50%;
+    }
+    .container5{
+      overflow:hidden ;
+      box-sizing: border-box;
     }
     .contact{
       transform: translateX(-250px);
