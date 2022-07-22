@@ -363,6 +363,9 @@ h1{
   display: flex;
   flex-direction: column;
 }
+.portfo2>p{
+  font-family:'Alegreya Sans' ;
+}
 .competence{
   position: absolute;
   top:10px;
@@ -370,38 +373,7 @@ h1{
   font-family:'Alegreya Sans Sc';
   z-index: 200;
 }
-.langage{
-  width: 100%;
-  min-height: 8vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.langage2{
-  width: 100%;
-  min-height: 8vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.langage>.css{
-  height: 8vh;
-  min-width: 3vw;
-  transform: translateY(-25px);
-}
-.langage>.html,.langage>.js{
-  height: 8vh;
-  min-width: 4vw;
-  transform: translateY(-25px);
-}
-.langage2>.figma{
-  height: 8vh;
- min-width: 4vw;
-}
-.langage2>.php{
-  height: 8vh;
-  min-width: 8vw;
-}
+
 .vide2{
     width: 30px;
     height: 30px;
