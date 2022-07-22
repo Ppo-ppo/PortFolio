@@ -135,6 +135,9 @@ h1{
     background-color: #e4c3b6;
     display: flex;
 }
+.portfo>p{
+  font-family: 'Alegreya Sans';
+}
 .portfo> h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
@@ -154,8 +157,6 @@ h1{
   padding:5px;
   font-family: 'Alegreya Sans';
   transition: .2s;
-  position: absolute;
-  top:250px
 }
 .projet1:hover{
     font-size:17Px ;
@@ -208,15 +209,12 @@ h1{
     text-decoration-color: black;
     color:black;
     padding:5px;
-    position: absolute;
     font-family: 'Alegreya Sans';
     transition: .2s;
-    position: absolute;
-    top:350px
   }
   .projet2:hover{
     font-size:17Px ;
-}
+  }
   .modal1{
     visibility: hidden;
     opacity: 0;
@@ -258,8 +256,6 @@ h1{
     text-decoration-color: black;
     color:black;
     padding:5px;
-    position: absolute;
-    top:450px;
     font-family: 'Alegreya Sans';
     transition: .2s;
   }
@@ -309,8 +305,6 @@ h1{
     text-decoration-color: black;
     color:black;
     padding:5px;
-    position: absolute;
-    top:550px;
     font-family: 'Alegreya Sans';
     transition: .2s; 
   }
