@@ -171,7 +171,6 @@ h1{
   justify-content: inherit;
   align-items: inherit;
   left:0px;
-  background: rgba(77,77,77,.3);
   transition: .3s;
   z-index: 1;
 }
@@ -225,7 +224,6 @@ h1{
     justify-content: inherit;
     align-items: inherit;
     left:0px;
-    background: rgba(77,77,77,.3);
     transition: .3s;
     z-index: 1000;
   }
@@ -272,7 +270,6 @@ h1{
     justify-content: inherit;
     align-items: inherit;
     left:0px;
-    background: rgba(77,77,77,.3);
     transition: .3s;
     z-index: 1000;
   }
@@ -321,7 +318,6 @@ h1{
     justify-content: inherit;
     align-items: inherit;
     left:0px;
-    background: rgba(77,77,77,.3);
     transition: .3s;
     z-index: 1000;
   }
@@ -338,7 +334,7 @@ h1{
     position: relative;
     background-color: whitesmoke;
   }
-  .modal_content3 > img {
+  .modal_content3 >a >img {
       width: 500px;
   }
   .modal_content3 > h2 {
