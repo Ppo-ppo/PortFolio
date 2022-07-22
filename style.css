@@ -180,7 +180,7 @@ h1{
 }
 .modal_content{
   padding: 1.5em 2em;
-  width: 500px;
+  width: 550px;
   max-width: 90%;
   text-align: center;
   border-radius: 10px;
@@ -188,7 +188,7 @@ h1{
   z-index: 1;
   background-color: whitesmoke;
 }
-.modal_content > img {
+.modal_content >a> img {
     width: 500px;
 }
 .modal_content > h2 {
@@ -233,7 +233,7 @@ h1{
   }
   .modal_content1{
     padding: 1.5em 2em;
-    width: 500px;
+    width: 550px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
@@ -279,7 +279,7 @@ h1{
   }
   .modal_content2{
     padding: 1.5em 2em;
-    width: 100%;
+    width: 550px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
@@ -287,7 +287,7 @@ h1{
     background-color: whitesmoke;
     box-sizing: border-box;
   }
-  .modal_content2 > img {
+  .modal_content2 >a> img {
       width: 450px;
   }
   .modal_content2 > h2 {
@@ -327,7 +327,7 @@ h1{
   }
   .modal_content3{
     padding: 1.5em 2em;
-    width: 500px;
+    width: 550px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
