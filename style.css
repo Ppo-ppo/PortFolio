@@ -430,21 +430,21 @@ section{
   gap: 10px;
   transform: translateY(-25px);
 }
-section>div>.cadreContain>h2{
-  font-family:'Alegreya Sans Sc' ;
-  max-height: 4vh;
-  max-width: 6vw;
-  margin: 0;
-  font-size: 3vh;
-}
 section>div>.cadreContain>p{
-  font-family: 'Alegreya Sans';
   margin: 0;
-  font-size: 3vh;
 }
-.mail2{
-padding-left: 10px;
-transform: translateX(53px);
+.telephone{
+  font-family:'Alegreya Sans Sc' ;
+  font-size: 25px;
+}
+.telephone2{
+  font-family:'Alegreya Sans' ;
+  font-size: 20px;
+}
+.mail{
+  font-family:'Alegreya Sans Sc' ;
+  padding-left: 10px;
+  font-size: 25px;
 }
 .social{
   flex-direction: row;
@@ -452,6 +452,12 @@ transform: translateX(53px);
 }
 .linkedin{
   padding-left: 15px;
+}
+.link{
+  height: 35px;
+}
+.github{
+  height: 40px;
 }
 .vide3{
     width: 30px;
