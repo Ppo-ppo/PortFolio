@@ -550,6 +550,7 @@ form>.button{
     }
     .navbar{
       transform: translateY(-10px);
+      display: none ;
     }
     .petitdessin{
       bottom: 10px;
@@ -570,8 +571,17 @@ form>.button{
     }
     .portfo{
       width: 100%;
-      overflow: hidden;
       flex-direction:column ;
+    }
+    .modal{
+      width: 100vw;
+    }
+    .modal_content{
+      width: 100vw;
+    }
+    .modal_content>a>img{
+      width: 70%;
+      transform: translateX(-10px);
     }
     .portfo>a{
       transform: translateY(-150px);
