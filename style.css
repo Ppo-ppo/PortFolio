@@ -509,7 +509,6 @@ form>.button{
     left:0;
     right:0;
     bottom:0;
-    background-color:#CCC;
     display:flex;
     flex-wrap:no-wrap;
   }

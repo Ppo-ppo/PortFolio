@@ -2,12 +2,28 @@ var page = document.getElementById('page');
 var last_pane = page.getElementsByClassName('pane');
 last_pane = last_pane[last_pane.length-1];
 var dummy_x = null;
+var y = document.body.getBoundingClientRect().top;
+if(window.innerWidth<400){
+  document.getElementById('page').style="background: rgb(255, 153, 0);position: relative;display: block; "
+  page.scrollLeft = 0;
+let panes = document.querySelectorAll(".pane")
+panes.forEach(pane => {
+  pane.style="overflow:hidden"
+  
+});
+  
+}
 
 window.onscroll = function () {
   // Horizontal Scroll.
-  var y = document.body.getBoundingClientRect().top;
+  //var y = document.body.getBoundingClientRect().top;
   var x =document.body.getBoundingClientRect().top;
+  var y = document.body.getBoundingClientRect().top;
   page.scrollLeft = -y;
+
+  console.log(window.innerWidth)
+
+  
   // if (window.matchMedia("(min-width:767px)").matches) {
   //   page.scrollTop=-y; 
   // }
