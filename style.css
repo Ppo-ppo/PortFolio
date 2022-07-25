@@ -532,18 +532,21 @@ form>.button{
   }
 
   @media (max-width:767px){
+    *{
+      margin: 0;
+    }
     h1{
       font-size: 80px;
     }
     .firstname{
-      transform: translateX(230px);
+      transform: translate(230px,-200px);
     }
     .lastname{
-      transform: translateX(250px);
+      transform: translate(250px,60px);
     }
     .dev{
       font-size: 40px;
-      transform: translateY(150px)translateX(250px);
+      transform: translate(245px,220px);
     }
     .navbar{
       transform: translateY(-10px);
@@ -565,12 +568,16 @@ form>.button{
       max-width: 100vw;
       font-size: 14px;
     }
-    .langage,.langage2{
-      flex-direction: column;
-    }
     .portfo{
       width: 100%;
       overflow: hidden;
+      flex-direction:column ;
+    }
+    .portfo>a{
+      transform: translateY(-150px);
+    }
+    .portfo>p{
+      display: none;
     }
     .portfo>h2{
       transform: translateX(-55px);
@@ -578,17 +585,10 @@ form>.button{
     .competence{
       display: none;
     }
-    .langage{
+    .portfo2{
       position: absolute;
-      flex-direction: row;
-      bottom: 0;
-      right: 50%;
-    }
-    .langage2{
-      position: absolute;
-      flex-direction: row;
-      bottom:12%;
-      right: 50%;
+      bottom: -120px;
+      left: 100px;
     }
     .container5{
       overflow:hidden ;
@@ -611,6 +611,14 @@ form>.button{
     }
     .cadreContain>p{
       font-size:20px !important ;
+    }
+    .formulairemail{
+      z-index: 1000;
+    }
+    .modal_close{
+      position: relative;
+      top: -350px;
+      right: -250px;
     }
     
   }
