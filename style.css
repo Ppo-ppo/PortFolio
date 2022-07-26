@@ -118,7 +118,7 @@ h1{
     display: inherit;
     max-width:50vw;
     font-family: 'Alegreya Sans';
-    font-size: 32px; 
+    font-size: 2.7vw; 
     margin: 0;
     overflow-wrap: break-word !important;
 }
@@ -154,7 +154,9 @@ h1{
     left: 80px;
 }
 .portfo>a{
-  font-size: 29px;
+  font-size: 1.9vw;
+  position: relative;
+  z-index: 9000;
 }
 .portfo > .projet1{
   text-decoration: none;
@@ -231,42 +233,6 @@ h1{
   .projet3:hover{
     transform: scale(1.03) ;
 }
-  .modal2{
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    display: inherit;
-    width: 100%;
-    height: 100vh;
-    justify-content: inherit;
-    align-items: inherit;
-    left:0px;
-    transition: .3s;
-    z-index: 1000;
-  }
-  .modal2:target{
-      visibility: visible;
-      opacity: 1;
-  }
-  .modal_content2{
-    padding: 1.5em 2em;
-    width: 660px;
-    max-width: 90%;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    background-color: whitesmoke;
-  }
-  .modal_content2 >a> img {
-      width: 600px;
-  }
-  .modal_content2 > h2 {
-      font-family: 'Alegreya Sans Sc';
-  }
-  .modal_content2 > p{
-      font-family: 'Alegreya Sans';
-      width: 500px;
-  }
   .portfo > .projet4{
     text-decoration: none;
     text-decoration-color: black;
@@ -278,41 +244,6 @@ h1{
   .projet4:hover{
     transform: scale(1.03) ;
 }
-  .modal3{
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    display: inherit;
-    width: 100%;
-    height: 100vh;
-    justify-content: inherit;
-    align-items: inherit;
-    left:0px;
-    transition: .3s;
-    z-index: 1000;
-  }
-  .modal3:target{
-      visibility: visible;
-      opacity: 1;
-  }
-  .modal_content3{
-    padding: 1.5em 2em;
-    width: 660px;
-    max-width: 90%;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    background-color: whitesmoke;
-  }
-  .modal_content3 >a >img {
-      width: 600px;
-  }
-  .modal_content3 > h2 {
-      font-family: 'Alegreya Sans Sc';
-  }
-  .modal_content3 > p{
-      font-family: 'Alegreya Sans';
-  }
 .portfo2{
   width: 50%;
   height: 100vh;
@@ -325,7 +256,7 @@ h1{
 }
 .portfo2>p{
   font-family:'Alegreya Sans' ;
-  font-size: 29px;
+  font-size: 2vw;
 }
 .competence{
   position: absolute;
