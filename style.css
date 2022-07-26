@@ -104,7 +104,8 @@ h1{
 .container2 > h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
-    font-size: 40px;
+    font-size: 65px;
+    transform: translateY(-50%);
 }
 
 .container2 >  p {
@@ -141,10 +142,13 @@ h1{
 .portfo> h2{
     font-family:'Alegreya Sans SC';
     font-weight:100;
-    font-size: 40px;
+    font-size: 60px;
     position: absolute;
     top: 10px;
     left: 80px;
+}
+.portfo>a{
+  font-size: 29px;
 }
 .patate3{
   position: absolute;
@@ -159,7 +163,7 @@ h1{
   transition: .2s;
 }
 .projet1:hover{
-    font-size:17Px ;
+  transform: scale(1.03) ;
 }
 .modal{
   visibility: hidden;
@@ -180,7 +184,7 @@ h1{
 }
 .modal_content{
   padding: 1.5em 2em;
-  width: 550px;
+  width: 660px;
   max-width: 90%;
   text-align: center;
   border-radius: 10px;
@@ -189,7 +193,7 @@ h1{
   background-color: whitesmoke;
 }
 .modal_content >a> img {
-    width: 500px;
+    width: 600px;
 }
 .modal_content > h2 {
     font-family: 'Alegreya Sans Sc';
@@ -212,7 +216,7 @@ h1{
     transition: .2s;
   }
   .projet2:hover{
-    font-size:17Px ;
+    transform: scale(1.03) ;
   }
   .modal1{
     visibility: hidden;
@@ -233,7 +237,7 @@ h1{
   }
   .modal_content1{
     padding: 1.5em 2em;
-    width: 550px;
+    width: 660px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
@@ -241,7 +245,7 @@ h1{
     background-color: whitesmoke;
   }
   .modal_content1 > img {
-      width: 500px;
+      width: 600px;
   }
   .modal_content1 > h2 {
       font-family: 'Alegreya Sans Sc';
@@ -258,7 +262,7 @@ h1{
     transition: .2s;
   }
   .projet3:hover{
-    font-size:17Px ;
+    transform: scale(1.03) ;
 }
   .modal2{
     visibility: hidden;
@@ -279,16 +283,15 @@ h1{
   }
   .modal_content2{
     padding: 1.5em 2em;
-    width: 550px;
+    width: 660px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
     position: relative;
     background-color: whitesmoke;
-    box-sizing: border-box;
   }
   .modal_content2 >a> img {
-      width: 450px;
+      width: 600px;
   }
   .modal_content2 > h2 {
       font-family: 'Alegreya Sans Sc';
@@ -306,7 +309,7 @@ h1{
     transition: .2s; 
   }
   .projet4:hover{
-    font-size:17Px ;
+    transform: scale(1.03) ;
 }
   .modal3{
     visibility: hidden;
@@ -327,7 +330,7 @@ h1{
   }
   .modal_content3{
     padding: 1.5em 2em;
-    width: 550px;
+    width: 660px;
     max-width: 90%;
     text-align: center;
     border-radius: 10px;
@@ -335,7 +338,7 @@ h1{
     background-color: whitesmoke;
   }
   .modal_content3 >a >img {
-      width: 500px;
+      width: 600px;
   }
   .modal_content3 > h2 {
       font-family: 'Alegreya Sans Sc';
@@ -355,6 +358,7 @@ h1{
 }
 .portfo2>p{
   font-family:'Alegreya Sans' ;
+  font-size: 29px;
 }
 .competence{
   position: absolute;
@@ -362,6 +366,7 @@ h1{
   left: 50px;
   font-family:'Alegreya Sans Sc';
   z-index: 200;
+  font-size: 60px;
 }
 
 .vide2{
@@ -406,6 +411,7 @@ h1{
 
 section>.bbox>h2{
   font-family:'Alegreya Sans Sc';
+  font-size: 60px;
 }
 .cadre{
   width: 50vw;
@@ -429,22 +435,23 @@ section{
   position: absolute;
   gap: 10px;
   transform: translateY(-25px);
+  box-sizing: border-box;
 }
 section>div>.cadreContain>p{
   margin: 0;
 }
 .telephone{
   font-family:'Alegreya Sans Sc' ;
-  font-size: 25px;
+  font-size: 30px;
 }
 .telephone2{
   font-family:'Alegreya Sans' ;
-  font-size: 20px;
+  font-size: 30px;
 }
 .mail{
   font-family:'Alegreya Sans Sc' ;
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   color:black;
 }
@@ -482,16 +489,28 @@ form>.button{
 
 .social{
   flex-direction: row;
-  margin-top: 25px;
+  position: relative;
+  z-index: 100000000;
+  transform: translateY(30px);
 }
 .linkedin{
   padding-left: 15px;
 }
 .link{
-  height: 35px;
+  height: 30px;
+  position: relative;
+  z-index: 100000000;
+}
+.link:hover{
+  transform:scale(1.1);
 }
 .github{
   height: 40px;
+  position: relative;
+  z-index: 100000000;
+}
+.github:hover{
+  transform:scale(1.1);
 }
 .vide3{
     width: 30px;
@@ -501,6 +520,44 @@ form>.button{
     right: 0px;
 }
 /*----------------------------------------------------------------------*/
+/* custom Cursor */
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px dashed rgb(238, 10, 10);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 5;
+}
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fa9e2d;
+    opacity: .2;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 5;
+  }
+  
+  .hover {
+    background-color: rgb(11, 55, 247);
+    opacity: 0.5;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
   #page {
     overflow:hidden;
     white-space:nowrap;
