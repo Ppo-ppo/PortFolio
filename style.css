@@ -150,10 +150,6 @@ h1{
 .portfo>a{
   font-size: 29px;
 }
-.patate3{
-  position: absolute;
-  z-index: 3;
-}
 .portfo > .projet1{
   text-decoration: none;
   text-decoration-color: black;
@@ -165,48 +161,7 @@ h1{
 .projet1:hover{
   transform: scale(1.03) ;
 }
-.modal{
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  display: inherit;
-  width: 100%;
-  height: 100vh;
-  justify-content: inherit;
-  align-items: inherit;
-  left:0px;
-  transition: .3s;
-  z-index: 1;
-}
-.modal:target{
-    visibility: visible;
-    opacity: 1;
-}
-.modal_content{
-  padding: 1.5em 2em;
-  width: 660px;
-  max-width: 90%;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
-  background-color: whitesmoke;
-}
-.modal_content >a> img {
-    width: 600px;
-}
-.modal_content > h2 {
-    font-family: 'Alegreya Sans Sc';
-}
-.modal_content > p{
-    font-family: 'Alegreya Sans';
-}
-.modal_close{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    text-decoration: none;
-}
+
 .portfo > .projet2{
     text-decoration: none;
     text-decoration-color: black;
@@ -252,6 +207,12 @@ h1{
   }
   .modal_content1 > p{
       font-family: 'Alegreya Sans';
+  }
+  .modal_close{
+    text-decoration: none;
+    position: absolute;
+    top:10px;
+    right: 25px;
   }
   .portfo > .projet3{
     text-decoration: none;
@@ -499,7 +460,6 @@ form>.button{
 .link{
   height: 30px;
   position: relative;
-  z-index: 100000000;
 }
 .link:hover{
   transform:scale(1.1);
@@ -507,7 +467,6 @@ form>.button{
 .github{
   height: 40px;
   position: relative;
-  z-index: 100000000;
 }
 .github:hover{
   transform:scale(1.1);
@@ -618,11 +577,13 @@ form>.button{
     .container2{
       width: 100vw;
       overflow: hidden;
+      box-sizing: content-box;
     }
     .container2>h2{
-      font-size: 26px;
+      font-size: 60px;
     }
     .container2>p{
+      box-sizing: content-box;
       max-width: 100vw;
       font-size: 14px;
     }
@@ -642,6 +603,7 @@ form>.button{
     }
     .portfo>a{
       transform: translateY(-150px);
+      font-size: 25px;
     }
     .portfo>p{
       display: none;
@@ -651,11 +613,15 @@ form>.button{
     }
     .competence{
       display: none;
+      
     }
     .portfo2{
       position: absolute;
       bottom: -120px;
       left: 100px;
+    }
+    .portfo2>p{
+      font-size: 25px;
     }
     .container5{
       overflow:hidden ;
