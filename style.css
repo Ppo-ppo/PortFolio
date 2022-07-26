@@ -9,6 +9,12 @@ h1{
     font-family: 'Megrim';
     font-size: 180px;  
 }
+.none{
+  display: none;
+}
+.blanc{
+  background-color: white;
+}
 .pomme{
     position: absolute;
     top: 30px;
@@ -569,7 +575,6 @@ form>.button{
     }
     .navbar{
       transform: translateY(-10px);
-      display: none ;
     }
     .petitdessin{
       bottom: 10px;
@@ -616,7 +621,6 @@ form>.button{
     }
     .competence{
       display: none;
-      
     }
     .portfo2{
       position: absolute;
@@ -656,5 +660,4 @@ form>.button{
       top: -350px;
       right: -250px;
     }
-    
   }
