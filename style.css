@@ -415,6 +415,7 @@ section>div>.cadreContain>p{
   font-size: 30px;
   text-decoration: none;
   color:black;
+  
 }
 .formulairemail{
   visibility: hidden;
@@ -427,12 +428,16 @@ section>div>.cadreContain>p{
   align-items: inherit;
   left:-350px;
   transition: .3s;
-  z-index: 1000;
-  background-color:#CCC ;
+  z-index: 100000;
+  background-color:rgb(237, 230, 230) ;
+  border-radius: 30px;
+  transition: 0.5s;
+  box-sizing: border-box;
 }
 .formulairemail:target{
   visibility: visible;
   opacity: 1;
+  box-sizing: border-box;
 }
 form>h2{
   font-family:'Alegreya Sans Sc' ;
@@ -451,7 +456,6 @@ form>.button{
 .social{
   flex-direction: row;
   position: relative;
-  z-index: 100000000;
   transform: translateY(30px);
 }
 .linkedin{
