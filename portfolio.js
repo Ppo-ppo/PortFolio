@@ -2,11 +2,18 @@ var page = document.getElementById('page');
 var last_pane = page.getElementsByClassName('pane');
 last_pane = last_pane[last_pane.length-1];
 var dummy_x = null;
+let navbar = document.querySelector('.navbar');
+//navbar au scroll//
+window.addEventListener('scroll', function(){
+  navbar.style="background-color:#ffff;border-radius:10px;width:100px"
+})
+
 var y = document.body.getBoundingClientRect().top;
 if(window.innerWidth<400){
   document.getElementById('page').style="background: rgb(255, 153, 0);position: relative;display: block; ";
   page.scrollLeft = 0;
 let panes = document.querySelectorAll(".pane")
+
 panes.forEach(pane => {
   pane.style="overflow:hidden"
 }) 
@@ -53,3 +60,5 @@ $('textarea').focus(function () { // Au clic sur le textarea Message
     $(this).parent().css('margin-bottom','100px'); // Rajout de la marge pour baisser le bouton submit
   }
 });
+
+
