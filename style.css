@@ -80,6 +80,7 @@ h1{
     bottom: 10px;  
     position: fixed;
     z-index: 10;
+    transition: 1s;
 }
 .navbar > li {
     font-family: 'Alegreya Sans';
@@ -328,6 +329,12 @@ section>div>.cadreContain>p{
   transition: 0.5s;
   box-sizing: border-box;
 }
+.modal_close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-decoration: none;
+}
 .formulairemail:target{
   visibility: visible;
   opacity: 1;
@@ -426,6 +433,8 @@ form>.button{
     }
     .navbar{
       transform: translateY(-10px);
+      gap:5px;
+      transition: 1s;
     }
     .petitdessin{
       bottom: 10px;

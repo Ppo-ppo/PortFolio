@@ -3,9 +3,16 @@ var last_pane = page.getElementsByClassName('pane');
 last_pane = last_pane[last_pane.length-1];
 var dummy_x = null;
 let navbar = document.querySelector('.navbar');
+let box1= document.querySelector('.box1')
 //navbar au scroll//
 window.addEventListener('scroll', function(){
-  navbar.style="background-color:#ffff;border-radius:10px;width:100px;t"
+  navbar.style="background-color:rgba(255, 255, 255, 0.592);border-radius:10px;width:85px;padding-left:5px";
+  if (window.innerWidth<400) {
+    navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;"
+    box1.style="display:flex;justify-content: center;align-items: center;"}
+    if (condition) {
+      
+    }
 })
 
 var y = document.body.getBoundingClientRect().top;
