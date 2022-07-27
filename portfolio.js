@@ -4,11 +4,12 @@ last_pane = last_pane[last_pane.length-1];
 var dummy_x = null;
 let navbar = document.querySelector('.navbar');
 let box1= document.querySelector('.box1')
+let navcontent=document.querySelector('.nav')
 //navbar au scroll//
 window.addEventListener('scroll', function(){
-  navbar.style="background-color:rgba(255, 255, 255, 0.592);border-radius:10px;width:85px;padding-left:5px";
+  navbar.style="background-color:rgba(255, 255, 255, 0.592);border-radius:10px;width:85px;padding-left:5px;backdrop-filter: blur(8px);";
   if (window.innerWidth<400) {
-    navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;"
+    navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;backdrop-filter: blur(8px);"
     box1.style="display:flex;justify-content: center;align-items: center;"}
     if (condition) {
       

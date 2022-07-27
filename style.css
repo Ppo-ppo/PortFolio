@@ -39,7 +39,7 @@ h1{
   position: absolute;
   width: 200px;
   height: 150px;
-  z-index: 1000;
+  z-index: 2;
   bottom:320px;
   right: 60px;
 }
@@ -81,6 +81,7 @@ h1{
     position: fixed;
     z-index: 10;
     transition: 1s;
+    backdrop-filter: blur(8px);
 }
 .navbar > li {
     font-family: 'Alegreya Sans';
@@ -88,6 +89,7 @@ h1{
     list-style: none;
     height: 35px;
     color:rgb(0, 0, 0);
+    
 }
 .navbar > li > a{
     text-decoration-line: none;
@@ -99,6 +101,7 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 .container2{
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -141,6 +144,7 @@ h1{
     left:0px;
     background-color: #e4c3b6;
     display: flex;
+    box-sizing: content-box;
 }
 .portfo>p{
   font-family: 'Alegreya Sans';
@@ -156,7 +160,8 @@ h1{
 .portfo>a{
   font-size: 1.9vw;
   position: relative;
-  z-index: 9000;
+  z-index: 2;
+  
 }
 .portfo > .projet1{
   text-decoration: none;
@@ -312,47 +317,6 @@ section>div>.cadreContain>p{
   text-decoration: none;
   color:black;
 }
-.formulairemail{
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  display: inherit;
-  width: 950px;
-  height: 700px;
-  justify-content: inherit;
-  align-items: inherit;
-  left:-350px;
-  transition: .3s;
-  z-index: 100000;
-  background-color:rgb(237, 230, 230) ;
-  border-radius: 30px;
-  transition: 0.5s;
-  box-sizing: border-box;
-}
-.modal_close{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  text-decoration: none;
-}
-.formulairemail:target{
-  visibility: visible;
-  opacity: 1;
-  box-sizing: border-box;
-}
-form>h2{
-  font-family:'Alegreya Sans Sc' ;
-}
-form>div>label{
-  font-family:'Alegreya Sans' ;
-}
-form>.button{
-  font-family:'Alegreya Sans' ;
-  height: 30px;
-  background-color: #E4C3B6;
-  border: #b89689 1px solid;
-  border-radius: 10px;
-}
 .social{
   flex-direction: row;
   position: relative;
@@ -454,6 +418,7 @@ form>.button{
       box-sizing: content-box;
       max-width: 100vw;
       font-size: 14px;
+      transform: none;
     }
     .portfo{
       width: 100%;
