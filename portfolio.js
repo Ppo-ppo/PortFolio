@@ -5,7 +5,7 @@ var dummy_x = null;
 let navbar = document.querySelector('.navbar');
 //navbar au scroll//
 window.addEventListener('scroll', function(){
-  navbar.style="background-color:#ffff;border-radius:10px;width:100px"
+  navbar.style="background-color:#ffff;border-radius:10px;width:100px;t"
 })
 
 var y = document.body.getBoundingClientRect().top;
