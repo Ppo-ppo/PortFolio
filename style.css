@@ -99,8 +99,7 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 .container2{
-    width: 50vw;
-    height: 50vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +120,7 @@ h1{
     font-size: 2.7vw; 
     margin: 0;
     overflow-wrap: break-word !important;
+    transform: translateX(-20%);
 }
 .vide{
     width: 30px;
