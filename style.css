@@ -6,8 +6,15 @@ body{
     color:black;
 }
 h1{
-    font-family: 'Megrim';
-    font-size: 180px;  
+    font-family: 'Megrim'; 
+    background-image: url(img/FlickeringDrearyGroundbeetle-size_restricted.gif);
+    background-size: cover;
+	  color: transparent;
+	  -moz-background-clip: text;
+	  -webkit-background-clip: text;
+	  text-transform: uppercase;
+	  font-size: 190px;
+	  margin: 10px 0;
 }
 .none{
   display: none;
@@ -52,19 +59,19 @@ h1{
 }
 .firstname{
     position: relative;
-    margin-right: 250px;
-    top:100px;
+    right: 250px;
+    top:55px;
     z-index: 3;
 }
 .lastname{
   position: relative;
-  margin-right: 265px;   
-  Bottom:180px
+  Bottom:25px;
+  right:250px;
 }
 .dev{
     position: relative;
     margin-right:265px;
-    bottom:350px   
+    bottom: 100px;   
 }
 .container1 > div > h2{
     font-family:'Alegreya Sans SC';
@@ -148,6 +155,8 @@ h1{
 }
 .portfo>p{
   font-family: 'Alegreya Sans';
+  position: relative;
+  z-index: 2;
 }
 .portfo> h2{
     font-family:'Alegreya Sans SC';
@@ -208,6 +217,10 @@ h1{
   .projet4:hover{
     transform: scale(1.03) ;
 }
+.patate3{
+  position: relative;
+  z-index: 1;
+}
 .portfo2{
   width: 50%;
   height: 100vh;
@@ -221,6 +234,8 @@ h1{
 .portfo2>p{
   font-family:'Alegreya Sans' ;
   font-size: 2vw;
+  position: relative;
+  z-index: 2;
 }
 .competence{
   position: absolute;
