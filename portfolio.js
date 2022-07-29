@@ -11,9 +11,6 @@ window.addEventListener('scroll', function(){
   if (window.innerWidth<400) {
     navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;backdrop-filter: blur(8px);"
     box1.style="display:flex;justify-content: center;align-items: center;"}
-    if (condition) {
-      
-    }
 })
 
 var y = document.body.getBoundingClientRect().top;
