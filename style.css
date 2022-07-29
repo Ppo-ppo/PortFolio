@@ -244,6 +244,7 @@ h1{
   font-family:'Alegreya Sans Sc';
   z-index: 200;
   font-size: 60px;
+  font-weight: 100;
 }
 
 .vide2{
@@ -289,6 +290,7 @@ h1{
 section>.bbox>h2{
   font-family:'Alegreya Sans Sc';
   font-size: 60px;
+  font-weight: 100;
 }
 .cadre{
   width: 50vw;
