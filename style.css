@@ -157,6 +157,7 @@ h1{
   font-family: 'Alegreya Sans';
   position: relative;
   z-index: 2;
+  font-size: 1.9vw;
 }
 .portfo> h2{
     font-family:'Alegreya Sans SC';
@@ -403,14 +404,14 @@ section>div>.cadreContain>p{
       font-size: 80px;
     }
     .firstname{
-      transform: translate(230px,-200px);
+      transform: translate(250px,-60px);
     }
     .lastname{
-      transform: translate(250px,60px);
+      transform: translate(250px,-30px);
     }
     .dev{
       font-size: 40px;
-      transform: translate(245px,220px);
+      transform: translate(260px,15px);
     }
     .navbar{
       transform: translateY(-10px);
