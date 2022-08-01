@@ -411,10 +411,10 @@ section>div>.cadreContain>p{
     transform: none;
   }
     .firstname{
-      transform: translate(250px,-60px);
+      transform: translate(247px,-60px);
     }
     .lastname{
-      transform: translate(250px,-30px);
+      transform: translate(247px,-30px);
     }
     .dev{
       font-size: 40px;
@@ -425,7 +425,7 @@ section>div>.cadreContain>p{
       transition: 1s;
     }
     .petitdessin{
-      bottom: 10px;
+      bottom: 50px;
       right: 0;
       height: 100px;
       width: 150px;
