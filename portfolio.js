@@ -12,16 +12,16 @@ window.addEventListener('scroll', function(){
     navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;backdrop-filter: blur(8px);"
     box1.style="display:flex;justify-content: center;align-items: center;"}
 })
-
 var y = document.body.getBoundingClientRect().top;
 if(window.innerWidth<400){
-  document.getElementById('page').style="background: rgb(255, 153, 0);position: relative;display: block; ";
+  document.getElementById('page').style="position: relative;display: block; ";
   page.scrollLeft = 0;
 let panes = document.querySelectorAll(".pane")
-
 panes.forEach(pane => {
   pane.style="overflow:hidden"
 }) 
+
+
 }
 window.onscroll = function () {
   // Horizontal Scroll.
@@ -40,4 +40,6 @@ function resize() {
   document.body.style.height = w + 'px';
   dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
 }
+
+
 
