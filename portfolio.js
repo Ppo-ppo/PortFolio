@@ -8,25 +8,20 @@ let navcontent=document.querySelector('.nav')
 //navbar au scroll//
 window.addEventListener('scroll', function(){
   navbar.style="background-color:rgba(255, 255, 255, 0.592);border-radius:10px;width:85px;padding-left:5px;backdrop-filter: blur(8px);";
-  if (window.innerWidth<400) {
-    navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;padding-left:5px;flex-direction: row;backdrop-filter: blur(8px);"
+  if (window.innerWidth<1024) {
+    navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;flex-direction: row;backdrop-filter: blur(8px);"
     box1.style="display:flex;justify-content: center;align-items: center;"}
 })
-var y = document.body.getBoundingClientRect().top;
-if(window.innerWidth<400){
+if(window.innerWidth<1024){
   document.getElementById('page').style="position: relative;display: block; ";
   page.scrollLeft = 0;
 let panes = document.querySelectorAll(".pane")
 panes.forEach(pane => {
   pane.style="overflow:hidden"
 }) 
-
-
 }
 window.onscroll = function () {
   // Horizontal Scroll.
-  //var y = document.body.getBoundingClientRect().top;
-  var x =document.body.getBoundingClientRect().top;
   var y = document.body.getBoundingClientRect().top;
   page.scrollLeft = -y;
 }

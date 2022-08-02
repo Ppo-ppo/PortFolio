@@ -80,10 +80,11 @@ h1{
     display: flex;
     align-items:baseline;
     flex-direction: column;
-    margin-left: 20px;
-    position: absolute;
-    bottom: 10px;  
+    justify-content: center;
+    padding: 10px !important;
     position: fixed;
+    bottom: 10px;  
+    left: 5px;
     z-index: 10;
     transition: 1s;
     backdrop-filter: blur(8px);
@@ -397,7 +398,7 @@ section>div>.cadreContain>p{
     background-color: white;
   }
 
-  @media (max-width:767px){
+  @media (max-width:1024px){
     *{
       margin: 0;
     }
@@ -423,6 +424,8 @@ section>div>.cadreContain>p{
     .navbar{
       gap:5px;
       transition: 1s;
+      left:30px;
+      padding-right: 5px;
     }
     .petitdessin{
       bottom: 50px;
