@@ -2,6 +2,10 @@
 body{
   overflow-x:hidden;
   color:black;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 h1{
   font-family: 'Megrim'; 
