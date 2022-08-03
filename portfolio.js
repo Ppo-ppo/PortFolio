@@ -35,6 +35,3 @@ function resize() {
   document.body.style.height = w + 'px';
   dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
 }
-
-
-
