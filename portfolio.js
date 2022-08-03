@@ -12,6 +12,16 @@ window.addEventListener('scroll', function(){
     navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;flex-direction: row;backdrop-filter: blur(8px);"
     box1.style="display:flex;justify-content: center;align-items: center;"}
 })
+var home = document.querySelector('.acceuil')
+home.addEventListener('click',function(){
+  window.scrollTo(0,0)
+})
+var apropos = document.querySelector('.propos')
+apropos.addEventListener('click',function(){
+   var offsetTop2 = document.querySelector('.about').offsetTop;
+   var offsetLeft2 = document.querySelector('.about').offsetLeft;
+  window.scrollTo(offsetTop2,offsetLeft2);
+})
 if(window.innerWidth<1024){
   document.getElementById('page').style="position: relative;display: block; ";
   page.scrollLeft = 0;
@@ -19,6 +29,12 @@ let panes = document.querySelectorAll(".pane")
 panes.forEach(pane => {
   pane.style="overflow:hidden"
 }) 
+var apropos = document.querySelector('.propos')
+apropos.addEventListener('click',function(){
+  var offsetTop2 = document.querySelector('.about').offsetTop;
+  var offsetLeft2 = document.querySelector('.about').offsetLeft;
+ window.scrollTo(offsetLeft2,offsetTop2);
+})
 }
 window.onscroll = function () {
   // Horizontal Scroll.
@@ -35,3 +51,4 @@ function resize() {
   document.body.style.height = w + 'px';
   dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
 }
+

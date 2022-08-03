@@ -100,14 +100,19 @@ right:250px;
   list-style: none;
   height: 35px;
   color:rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 }
-.navbar > li > a{
+.navbar > li > p{
   text-decoration-line: none;
   text-decoration-color:black;
   color: black;
+  
 }
-.navbar > li > a:hover{
+.navbar > li > p:hover{
   border-left: #E4C3B6 2px solid;
 }
 /*---------------------------------------------------------------------*/
@@ -136,7 +141,7 @@ right:250px;
   overflow-wrap: break-word !important;
   transform: translateX(-20%);
 }
-.vide{
+.about{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -425,6 +430,10 @@ transform:scale(1.1);
   .dev{
     font-size: 40px;
     transform: translate(260px,15px);
+  }
+  .about{
+    top: inherit;
+    bottom: -30px;
   }
   .navbar{
     gap:5px;
