@@ -14,13 +14,32 @@ window.addEventListener('scroll', function(){
 })
 var home = document.querySelector('.acceuil')
 home.addEventListener('click',function(){
-  window.scrollTo(0,0)
+  window.scrollTo({
+    top: "0",
+    behavior: 'smooth'
+  })
 })
 var apropos = document.querySelector('.propos')
 apropos.addEventListener('click',function(){
-   var offsetTop2 = document.querySelector('.about').offsetTop;
-   var offsetLeft2 = document.querySelector('.about').offsetLeft;
-  window.scrollTo(offsetTop2,offsetLeft2);
+  window.scrollTo({
+    top: (window.screen.width),
+    behavior: 'smooth'
+  })
+})
+var port = document.querySelector('.port')
+port.addEventListener('click',function(){
+  window.scrollTo({
+    top: (window.screen.width*2),
+    behavior: 'smooth'
+  })
+})
+var contactMe = document.querySelector('.contactNav')
+contactMe.addEventListener('click',function(){
+  window.scrollTo({
+    top: (window.screen.width*3),
+    behavior: 'smooth'
+  })
+
 })
 if(window.innerWidth<1024){
   document.getElementById('page').style="position: relative;display: block; ";
@@ -31,9 +50,26 @@ panes.forEach(pane => {
 }) 
 var apropos = document.querySelector('.propos')
 apropos.addEventListener('click',function(){
-  var offsetTop2 = document.querySelector('.about').offsetTop;
-  var offsetLeft2 = document.querySelector('.about').offsetLeft;
- window.scrollTo(offsetLeft2,offsetTop2);
+  window.scrollTo({
+    top: (window.screen.height),
+    behavior: 'smooth'
+  })
+})
+var port = document.querySelector('.port')
+port.addEventListener('click',function(){
+  window.scrollTo({
+    top: (window.screen.height*2),
+    behavior: 'smooth'
+  })
+})
+
+var contactMe = document.querySelector('.contactNav')
+contactMe.addEventListener('click',function(){
+  window.scrollTo({
+    top: (window.screen.height*3),
+    behavior: 'smooth'
+  })
+
 })
 }
 window.onscroll = function () {
