@@ -7,6 +7,11 @@ let box1= document.querySelector('.box1')
 let navcontent=document.querySelector('.nav')
 //navbar au scroll//
 window.addEventListener('scroll', function(){
+  console.log(document.querySelector('.port').getBoundingClientRect())
+  console.log("about"+ document.querySelector('.container2').offsetLeft)
+  console.log("Portfolio"+ document.querySelector('.port').offsetLeft)
+
+
   navbar.style="background-color:rgba(255, 255, 255, 0.592);border-radius:10px;width:85px;padding-left:5px;backdrop-filter: blur(8px);";
   if (window.innerWidth<1024) {
     navbar.style="background-color:rgba(255, 255, 255, 0.592);width:80vw;border-radius:10px;flex-direction: row;backdrop-filter: blur(8px);"
@@ -22,21 +27,21 @@ home.addEventListener('click',function(){
 var apropos = document.querySelector('.propos')
 apropos.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.width),
+    top: (window.innerWidth),
     behavior: 'smooth'
   })
 })
 var port = document.querySelector('.port')
 port.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.width*2),
+    top: (window.innerWidth*2),
     behavior: 'smooth'
   })
 })
 var contactMe = document.querySelector('.contactNav')
 contactMe.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.width*3),
+    top: (window.innerWidth*3),
     behavior: 'smooth'
   })
 
@@ -51,14 +56,14 @@ panes.forEach(pane => {
 var apropos = document.querySelector('.propos')
 apropos.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.height),
+    top: (window.innerHeight),
     behavior: 'smooth'
   })
 })
 var port = document.querySelector('.port')
 port.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.height*2),
+    top: (window.innerHeight*2),
     behavior: 'smooth'
   })
 })
@@ -66,7 +71,7 @@ port.addEventListener('click',function(){
 var contactMe = document.querySelector('.contactNav')
 contactMe.addEventListener('click',function(){
   window.scrollTo({
-    top: (window.screen.height*3),
+    top: (window.innerHeight*3),
     behavior: 'smooth'
   })
 

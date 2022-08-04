@@ -10,7 +10,7 @@ body{
 }
 h1{
   font-family: 'Megrim'; 
-  background-image: url(img/wavy.gif);
+  background-image: url(img/wavqy-min.gif);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
@@ -47,7 +47,7 @@ background-color: white;
 }
 .petitdessin{
 position: absolute;
-width: 200px;
+width: 231px;
 height: 150px;
 z-index: 2;
 bottom:320px;
@@ -111,10 +111,13 @@ right:250px;
   text-decoration-line: none;
   text-decoration-color:black;
   color: black;
+  border-left: #E4C3B6 0px solid;
+  transition:.3s
   
 }
 .navbar > li > p:hover{
-  border-left: #E4C3B6 2px solid;
+  border-left: #E4C3B6 20px solid;
+  transition:.3s
 }
 /*---------------------------------------------------------------------*/
 .container2{
@@ -140,7 +143,8 @@ right:250px;
   font-size: 2.7vw; 
   margin: 0;
   overflow-wrap: break-word !important;
-  transform: translateX(-20%);
+  white-space: normal;
+  text-align: center;
 }
 .about{
   width: 30px;
@@ -258,13 +262,7 @@ font-size: 60px;
 font-weight: 100;
 }
 
-.vide2{
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top:0px;
-  right: 200px;
-}
+
 /*----------------------------------------------------------------------*/
 .patate4{
   position: absolute;
@@ -358,6 +356,7 @@ padding-left: 15px;
 }
 .link{
 height: 30px;
+width: 30px;
 position: relative;
 }
 .link:hover{
@@ -365,6 +364,7 @@ transform:scale(1.1);
 }
 .github{
 height: 40px;
+width: 40px;
 position: relative;
 }
 .github:hover{
@@ -457,10 +457,7 @@ transform:scale(1.1);
     font-size: 60px;
   }
   .container2>p{
-    box-sizing: content-box;
-    max-width: 100vw;
-    font-size: 14px;
-    transform: none;
+    font-size: 20px;
   }
   .portfo{
     width: 100%;
