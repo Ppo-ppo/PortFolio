@@ -93,3 +93,39 @@ function resize() {
   dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
 }
 
+
+// tableau modal objet
+const modalContent=[
+  {name:"Projet Creative",description:"langage: Html/Css",lien:"https://paulinel.promo-167.codeur.online/Projet/ProjectOneInteNoBootstrap/",src:"img/creative.png"},
+  {name:"Projet Calculette",description:"langage: Html/Css et Javascript",lien:"https://paulinel.promo-167.codeur.online/Projet/Calculette/",src:"img/photo3.png"},
+  {name:"Projet Popcode",description:"langage: Html/Css  Javascript",lien:"https://paulinel.promo-167.codeur.online/Projet/PopCode/",src:"img/photo4.png"}];
+const modal = document.querySelector('.modal');
+const projet1 = document.querySelector('.projet1');
+const projet3= document.querySelector('.projet3');
+const projet4= document.querySelector('.projet4');
+const close = document.querySelector('.croix');
+projet1.addEventListener('click', function(){
+  modal.classList.toggle('none');
+  document.querySelector('.modalcontent>h2').textContent=modalContent[0].name;
+  document.querySelector('.modalcontent>p').textContent=modalContent[0].description;
+  document.querySelector('.modalcontent>.lien').innerHTML= `<a class="lien"target="_blank" href="${modalContent[0].lien}">voir le site</a>`
+  document.querySelector('.modalcontent>.lg').src=modalContent[0].src;
+})
+projet3.addEventListener('click', function(){
+  modal.classList.toggle('none');
+  document.querySelector('.modalcontent>h2').textContent=modalContent[1].name;
+  document.querySelector('.modalcontent>p').textContent=modalContent[1].description;
+  document.querySelector('.modalcontent>.lien').innerHTML= `<a class="lien"target="_blank" href="${modalContent[1].lien}">voir le site</a>`;
+  document.querySelector('.modalcontent>.lg').src=modalContent[1].src;
+})
+projet4.addEventListener('click', function(){
+  modal.classList.toggle('none');
+  document.querySelector('.modalcontent>h2').textContent=modalContent[2].name;
+  document.querySelector('.modalcontent>p').textContent=modalContent[2].description;
+  document.querySelector('.modalcontent>.lien').innerHTML= `<a class="lien"target="_blank" href="${modalContent[2].lien}">voir le site</a>`;
+  document.querySelector('.modalcontent>.lg').src=modalContent[2].src;
+})
+close.addEventListener('click', function(){
+  modal.classList.toggle('none');
+})
+

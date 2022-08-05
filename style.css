@@ -167,11 +167,11 @@ right:250px;
   display: flex;
   box-sizing: content-box;
 }
-.portfo>p{
-font-family: 'Alegreya Sans';
-position: relative;
-z-index: 2;
-font-size: 1.9vw;
+  .portfo>p{
+  font-family: 'Alegreya Sans';
+  position: relative;
+  z-index: 2;
+  font-size: 1.9vw;
 }
 .portfo> h2{
   font-family:'Alegreya Sans SC';
@@ -182,87 +182,118 @@ font-size: 1.9vw;
   left: 80px;
 }
 .portfo>a{
-font-size: 1.9vw;
-position: relative;
-z-index: 2;
-
-}
-.portfo > .projet1{
-text-decoration: none;
-text-decoration-color: black;
-color:black;
-padding:5px;
-font-family: 'Alegreya Sans';
-transition: .2s;
+  font-size: 1.9vw;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-family: 'Alegreya Sans';
+  text-decoration: none;
+  text-decoration-color: black;
+  color:black;
+  padding:5px;
+  transition: .2s; 
 }
 .projet1:hover{
-transform: scale(1.03) ;
-}
-
-.portfo > .projet2{
-  text-decoration: none;
-  text-decoration-color: black;
-  color:black;
-  padding:5px;
-  font-family: 'Alegreya Sans';
-  transition: .2s;
-}
-.projet2:hover{
   transform: scale(1.03) ;
-}
-.portfo > .projet3{
-  text-decoration: none;
-  text-decoration-color: black;
-  color:black;
-  padding:5px;
-  font-family: 'Alegreya Sans';
-  transition: .2s;
 }
 .projet3:hover{
   transform: scale(1.03) ;
-}
-.portfo > .projet4{
-  text-decoration: none;
-  text-decoration-color: black;
-  color:black;
-  padding:5px;
-  font-family: 'Alegreya Sans';
-  transition: .2s; 
 }
 .projet4:hover{
   transform: scale(1.03) ;
 }
 .patate3{
-position: relative;
-z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .portfo2{
-width: 50%;
-height: 100vh;
-justify-content: inherit;
-align-items: inherit;
-position: absolute;
-left:50%;
-display: flex;
-flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  justify-content: inherit;
+  align-items: inherit;
+  position: absolute;
+  left:50%;
+  display: flex;
+  flex-direction: column;
 }
 .portfo2>p{
-font-family:'Alegreya Sans' ;
-font-size: 2vw;
-position: relative;
-z-index: 2;
+  font-family:'Alegreya Sans' ;
+  font-size: 2vw;
+  position: relative;
+  z-index: 2;
 }
 .competence{
-position: absolute;
-top:10px;
-left: 50px;
-font-family:'Alegreya Sans Sc';
-z-index: 200;
-font-size: 60px;
-font-weight: 100;
+  position: absolute;
+  top:10px;
+  left: 50px;
+  font-family:'Alegreya Sans Sc';
+  z-index: 200;
+  font-size: 60px;
+  font-weight: 100;
 }
 
-
+/*----------------------------------------------------------------------*/
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  background:rgba(207, 182, 182, 0.715) ;
+  transition: .3s;
+  z-index: 1000000;
+  top: 0; 
+  backdrop-filter: blur(8px);
+}
+.lien{
+  text-decoration: none;
+  text-decoration-color: black;
+  color:black;
+  padding:5px;
+  font-family: 'Alegreya Sans';
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+  cursor: pointer;
+  font-size: 35px;
+}
+.modalcontent{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px; 
+  
+}
+.modal>.modalcontent>.lg{
+  position: absolute;
+  left: 100px;
+}
+.modal>.modalcontent>h2{
+  color: black;
+  position: absolute;
+  top:50px;
+  font-size: 80px;
+  left: 35%;
+  margin: 0;
+  font-family: 'Alegreya Sans Sc';
+}
+.modal>.modalcontent>p{
+  color: black;
+  position: absolute;
+  font-size:25px;
+  right: 20%;
+  margin:0;
+  font-family: 'Alegreya Sans';
+}
+.croix{
+  width: 80px;
+  position: absolute;
+  right: 270px;
+  top:100px;
+  cursor: pointer;
+}
 /*----------------------------------------------------------------------*/
 .patate4{
   position: absolute;
@@ -524,5 +555,47 @@ transform:scale(1.1);
     position: relative;
     top: -350px;
     right: -250px;
+  }
+  .modal>.modalcontent>.lg{
+    position: absolute;
+    width: 60%;
+    left: 90px;
+    top:200px
+  }
+  .modal>.modalcontent>h2{
+    color: black;
+    position: absolute;
+    top:60px;
+    font-size: 50px;
+    left: 20px;
+    margin: 0;
+    font-family: 'Alegreya Sans Sc';
+  }
+  .croix{
+    width: 80px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    cursor: pointer;
+  }
+  .modal>.modalcontent>p{
+    color: black;
+    position: absolute;
+    font-size:25px;
+    right: 20%;
+    margin:0;
+    font-family: 'Alegreya Sans';
+  }
+  .lien{
+    text-decoration: none;
+    text-decoration-color: black;
+    color:black;
+    padding:5px;
+    font-family: 'Alegreya Sans';
+    position: absolute;
+    bottom: 40%;
+    right: 30%;
+    cursor: pointer;
+    font-size: 35px;
   }
 }
