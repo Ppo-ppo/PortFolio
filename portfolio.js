@@ -133,6 +133,7 @@ const contact= document.querySelector('.modalContact')
 const croix= document.querySelector('.croixContact')
 mail.addEventListener('click',function(){
 contact.classList.toggle('none');
+body.classList.add('hidden')
 })
 croix.addEventListener('click', function(){
   contact.classList.toggle('none')
