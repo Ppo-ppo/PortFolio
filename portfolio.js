@@ -128,4 +128,13 @@ projet4.addEventListener('click', function(){
 close.addEventListener('click', function(){
   modal.classList.toggle('none');
 })
+const mail=document.querySelector('.mail');
+const contact= document.querySelector('.modalContact')
+const croix= document.querySelector('.croixContact')
+mail.addEventListener('click',function(){
+contact.classList.toggle('none');
+})
+croix.addEventListener('click', function(){
+  contact.classList.toggle('none')
+})
 

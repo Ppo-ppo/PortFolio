@@ -376,7 +376,40 @@ padding-left: 10px;
 font-size: 30px;
 text-decoration: none;
 color:black;
+cursor: pointer;
 }
+/*-----------------------ModalContact-------------------------------------*/
+.modalContact{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top:-23px;
+  background:rgba(207, 182, 182, 0.715) ;
+  transition: .3s;
+  z-index: 90000000 !important;
+  backdrop-filter: blur(8px);
+}
+.modalContentContact{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px; 
+  flex-direction: column;
+}
+.contactezmoi{
+  font-family:'Alegreya Sans';
+}
+.croixContact{
+  width: 80px;
+  position: absolute;
+  right: 270px;
+  top:100px;
+  cursor: pointer;
+}
+/*------------------------------------------------------------------------*/
 .social{
 flex-direction: row;
 position: relative;

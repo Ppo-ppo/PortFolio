@@ -85,7 +85,19 @@
                     <div class="cadreContain"id="conta">
                         <p class="telephone">Téléphone:</p>
                         <p class="telephone2">06-38-92-54-86</p>
-                        <p href="#formulaire"class="mail">Me contacter par mail</p>
+                        <p class="mail">Me contacter par mail</p>
+                    <div class="modalContact none">
+                        <div class="modalContentContact">
+                            <h2 class="contactezmoi">Contactez moi</h2>
+                            <form method="POST" action="">
+                                <input type="text" name="nom" placeholder="Votre nom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
+                                <input type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+                                <textarea name="message" placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
+                                <input type="submit" value="Envoyer !" name="mailform"/>
+                            </form>
+                            <img class="croixContact"src="img/close.svg" alt="croix de fermeture de formulaire de contact">
+                        </div>
+                    </div>
                         <div class="social">
                             <a  href="https://github.com/Ppo-ppo"><img src="img/GitHub.svg" class="github" alt="Lien vers mon GitHub"></a>
                             <a class="linkedin"href="https://www.linkedin.com/in/pauline-louvrier/"><img src="img/Linkedin.svg" class="link"alt="lien vers mon linkedin"></a>
