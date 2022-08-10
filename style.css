@@ -51,7 +51,7 @@ position: absolute;
 width: 231px;
 height: 150px;
 z-index: 2;
-bottom:320px;
+bottom:290px;
 right: 60px;
 }
 .un{
@@ -222,6 +222,7 @@ right:250px;
   font-size: 2vw;
   position: relative;
   z-index: 2;
+  transform: translateX(-50px);
 }
 .competence{
   position: absolute;
@@ -594,6 +595,9 @@ transform:scale(1.1);
     display: none;
   }
   .portfo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: -120px;
     left: 100px;
@@ -631,17 +635,16 @@ transform:scale(1.1);
     top: -350px;
     right: -250px;
   }
-  .modal>.modalcontent>.lg{
-    position: absolute;
-    width: 60%;
-    left: 90px;
-    top:200px
+  .lg{
+    width: 70%;
+    top:150px;
+    left: 60px !important;
   }
   .modal>.modalcontent>h2{
     color: black;
     position: absolute;
-    top:60px;
-    font-size: 50px;
+    top:70px;
+    font-size: 40px;
     left: 20px;
     margin: 0;
     font-family: 'Alegreya Sans Sc';
@@ -657,8 +660,9 @@ transform:scale(1.1);
     color: black;
     position: absolute;
     font-size:25px;
-    right: 20%;
+    right: 30%;
     margin:0;
+    bottom: 40%;
     font-family: 'Alegreya Sans';
   }
   .lien{
@@ -668,7 +672,7 @@ transform:scale(1.1);
     padding:5px;
     font-family: 'Alegreya Sans';
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     right: 30%;
     cursor: pointer;
     font-size: 35px;

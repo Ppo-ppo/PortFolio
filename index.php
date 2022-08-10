@@ -1,8 +1,10 @@
 <?php
 if(isset($_POST['mailform'])) {
    if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message'])) {
+    $nom=$_POST['nom'];
+    $mail=$_POST['mail'];
       $header="MIME-Version: 1.0\r\n";
-      $header.='From:"nom_d\'expediteur"<votre@mail.com>'."\n";
+      $header.="From: $nom <$mail>"."\n";
       $header.='Content-Type:text/html; charset="uft-8"'."\n";
       $header.='Content-Transfer-Encoding: 8bit';
       $message='
@@ -121,9 +123,9 @@ if(isset($_POST['mailform'])) {
                         <div class="modalContentContact">
                             <h2 class="contactezmoi">Contactez moi</h2>
                             <form method="POST" action="">
-                                <input type="text" name="nom" placeholder="Votre nom" class="nomu"value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
-                                <input class="mailu"type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
-                                <textarea name="message" placeholder="Votre message" class="areamessage"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
+                                <input type="text" name="nom"  required placeholder="Votre nom" class="nomu"value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
+                                <input class="mailu"type="email" name="mail" placeholder="Votre email" required value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+                                <textarea name="message" required placeholder="Votre message" class="areamessage"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
                                 <input type="submit" value="Envoyer !" name="mailform" class="envoyer"/>
                             </form>
                             <p>  
