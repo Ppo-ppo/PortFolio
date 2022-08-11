@@ -219,7 +219,7 @@ right:250px;
 }
 .portfo2>p{
   font-family:'Alegreya Sans' ;
-  font-size: 2vw;
+  font-size: 1.7vw;
   position: relative;
   z-index: 2;
   transform: translateX(-50px);
@@ -598,9 +598,10 @@ transform:scale(1.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: inherit;
     bottom: -120px;
-    left: 100px;
+    width: 100vw;
+    left: 13%;
   }
   .portfo2>p{
     font-size: 25px;
