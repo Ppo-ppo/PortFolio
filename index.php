@@ -71,7 +71,7 @@ if(isset($_POST['mailform'])) {
         <div class="pane">
             <div class="container2">
                 <h2>À Propos:</h2>
-                <p >passionée des nouvelles technologies. J'ai fais le choix d'une reconversion professionelle pour devenir web developpeur. J'aime donner vie aux maquettes que l'on me confit.</p>
+                <p >Passionée de nouvelles technologies. J'ai fait le choix d'une reconversion professionelle pour devenir développeur Web. J'aime donner vie aux maquettes que l'on me confie.</p>
                 <div class="about"></div>
             </div>
             
